@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Se12Page implements OnInit {
 
+  componentes_sistemas_expertos=["Interfaz de usuario", "Módulo de explicación"]
   constructor() { }
 
   ngOnInit() {

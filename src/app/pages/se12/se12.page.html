@@ -1,10 +1,21 @@
 <ion-header>
   <ion-toolbar>
     <app-header></app-header>
-    <ion-title>SE1.2</ion-title>
+    <ion-title>Súbpagina 1.2</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h3>Súbpagina 1 De Sistemas Expertos I</h3>
+
+  <ion-card>
+    <ion-title>Componentes de Salida</ion-title>
+    <ion-card-content>
+      <ion-item *ngFor="let item of componentes_sistemas_expertos">
+        <ion-chip>
+          <ion-icon name="remove"></ion-icon>
+          <ion-label>{{item}}</ion-label>
+        </ion-chip>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

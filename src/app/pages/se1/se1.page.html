@@ -1,23 +1,39 @@
-<ion-header>
+<ion-header class="ion-padding">
   <ion-toolbar>
        <app-header></app-header>
-       <ion-title>SE1</ion-title> 
+       <ion-title>Subpágina 1</ion-title> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-padding">
-<h3>Página SE1</h3>
-</ion-content>
-<ion-button  expand="block" [routerLink]="['/se11']" routerLinkActive="router-link-active" >
-  Ir a sub página 1 de Sistemas Expertos I
-</ion-button>
 
-<ion-button  expand="block" [routerLink]="['/se12']" routerLinkActive="router-link-active" >
-  Ir a sub página 2 de Sistemas Expertos I
-</ion-button>
+  <ion-card>
+    <ion-item>
+      <ion-img class="center" src="../../../assets/img/componentes_sistemas_expertos.webp"></ion-img>
+    </ion-item>
+    <ion-card-header>
+      <ion-card-subtitle></ion-card-subtitle>
+      <ion-card-title>Componentes de un Sistema Experto</ion-card-title>
+  </ion-card-header>
+  
+    <ion-card-content>
+      Los componentes se pueden subdividir en componentes de entrada y componentes de salida.
+      Donde los componentes de entrada se encargan de formatear y guardar los datos y los componetes de salida permite que los usuarios inexpertos interactuen con el sistema.
+
+    </ion-card-content>
+  </ion-card>
+  <ion-button  expand="block" [routerLink]="['/se11']" routerLinkActive="router-link-active" >
+    Componentes De Entrada
+  </ion-button>
+  
+  <ion-button  expand="block" [routerLink]="['/se12']" routerLinkActive="router-link-active" >
+    Componentes De Salida
+  </ion-button>
+</ion-content>
+
 
 <ion-footer>
   <ion-toolbar>
-    Footer SE1
+    Footer
   </ion-toolbar>
 </ion-footer>
